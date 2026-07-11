@@ -3,7 +3,7 @@
   "appName": "Cevichería Batis",
   "webDir": "dist",
   "server": {
-    "url": "http://129.159.90.187",
+    "url": "http://129.159.90.187/pos.html",
     "cleartext": true,
     "allowNavigation": ["129.159.90.187"]
   },
