@@ -1,22 +1,34 @@
 {
   "appId": "com.cevicheria.batis",
-  "appName": "Cevichería Batis",
+  "appName": "Cevichería Batis POS",
   "webDir": "dist",
   "server": {
     "url": "http://129.159.90.187/pos.html",
     "cleartext": true,
-    "allowNavigation": ["129.159.90.187"]
+    "allowNavigation": ["129.159.90.187", "*.129.159.90.187"],
+    "androidScheme": "http"
   },
   "android": {
     "allowMixedContent": true,
-    "captureInput": true
+    "captureInput": true,
+    "hardwareAcceleration": true
+  },
+  "ios": {
+    "preferredContentMode": "mobile"
   },
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 2000,
+      "launchShowDuration": 0,
+      "launchAutoHide": true,
       "backgroundColor": "#0f0f1a",
       "androidScaleType": "CENTER_CROP",
-      "showSpinner": false
+      "showSpinner": false,
+      "splashImmersive": true
+    },
+    "StatusBar": {
+      "overlaysWebView": true,
+      "backgroundColor": "#00000000",
+      "style": "DARK"
     }
   }
 }
